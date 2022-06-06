@@ -4,8 +4,11 @@ import { Link } from 'react-router-dom';
 const App = () => {
   return (
     <div className='App'>
-      <h1>Hello from App</h1>
-      <Link to={'profile'}>Profile</Link>
+      <h1>Bookkeeper!</h1>
+      <nav style={{ borderBottom: 'solid 1px', paddingBottom: '1rem' }}>
+        <Link to={'/invoices'}>Invoices</Link> |{' '}
+        <Link to={'/expenses'}>Expenses</Link>
+      </nav>
     </div>
   );
 };
